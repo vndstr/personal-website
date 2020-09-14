@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&display=swap');
+
+* {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+p,
+a {
+    color: #272727;
+}
+
+nav {
+    height: 80px;
+}
+
+.nav-link {
+    margin-right: 36px;
+}
+
+.btn-custom-primary {
+    padding: 16px 24px;
+    border: 1px solid #EE8A9C;
+    background-color: #EE8A9C;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: 0.3s ease-out;
+}
+
+.btn-custom-secondary {
+    padding: 16px 24px;
+    border: 1px solid #EE8A9C;
+    background-color: transparent;
+    color: #EE8A9C;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: 0.3s ease-out;
+}
+
+.btn-custom-primary:hover {
+    box-shadow: 0px 10px 30px #27272727;
+    transform: scale(1.02);
+    transition: 0.3s ease-in;
+}
+
+.card-shot:hover {
+    box-shadow: 0px 10px 30px #27272710;
+    transform: scale(1.01);
+    transition: 0.3s ease-in;
+}
+
+.hero-section {
+    height: 790px;
+    position: relative;
+}
+
+.bg-soft-blue {
+    z-index: -999;
+    position: absolute;
+    background-color: #D9EDFF;
+    width: 800px;
+    height: 790px;
+    top: -80px;
+    right: -197px;
+}
+
+.navbar-brand {
+    align-items: center;
+    padding: 0;
+}
+
+.hero-img {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+}
+
+.pop-up {
+    position: absolute;
+    z-index: -100;
+    left: 14%;
+    animation: popUp 1.3s ease-in-out;
+}
+
+@keyframes popUp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hero-title {
+    margin-top: 126px;
+}
+
+p.mini-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFCA7B;
+}
+
+h1.hero {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.card-profile {
+    width: 415px;
+    height: 137px;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px #27272727;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: popUpAnimate 1s ease-in-out;
+}
+
+@keyframes popUpAnimate {
+    0% {
+        transform: translateY(1200px) scale(0.7);
+        opacity: 0.7;
+    }
+
+    80% {
+        transform: translateY(0px) scale(0.7);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.card-profile img {
+    height: 100%;
+
+}
+
+.mini-title-profile {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    color: #272727;
+    justify-content: space-around;
+}
+
+.mini-title-profile h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.mini-title-profile a {
+    color: #EE8A9C;
+    font-weight: 700;
+}
+
+.title-header {
+    margin-top: 206px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.title-header p {
+    font-size: 18px;
+    color: #FFCA7B;
+    font-weight: 600;
+}
+
+.title-header h2 {
+    color: #272727;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title-header-left p {
+    font-size: 18px;
+    color: #FFCA7B;
+    font-weight: 600;
+}
+
+.title-header-left h2 {
+    color: #272727;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.card-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title-mid {
+    font-size: 18px;
+    color: #272727;
+    padding: 40px 0;
+    font-weight: 700;
+}
+
+.card-shot {
+    width: 100%;
+    height: 294px;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.card-shot img {
+    width: 270px;
+    text-align: center;
+}
+
+.title-shot {
+    padding: 18px 24px;
+}
+
+.title-shot h4 {
+    font-size: 18px;
+    color: #272727;
+    font-weight: 700;
+}
+
+.title-shot p {
+    color: #4E4E4E;
+}
+
+.blog-section {
+    margin-top: 246px;
+}
+
+@media (max-width: 600px) {
+    .card-shot img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-shot {
+        height: auto;
+        margin-top: 24px;
+    }
+
+    .pop-up {
+        width: 50%;
+    }
+
+    nav {
+        z-index: 999;
+    }
+
+    .hero-section {
+        height: 100vh;
+    }
+
+    .card-profile {
+        position: relative;
+        margin: 72px 24px auto auto;
+        width: 100%;
+    }
+
+    .mini-title-profile {
+        padding: 14px;
+    }
+
+    .card-profile img {
+        display: inline;
+    }
+
+
+    .hero-title {
+        margin-top: 48px;
+    }
+
+    .navbar-nav {
+        z-index: 999;
+        background-color: #fff !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        align-items: center !important;
+        justify-content: center;
+    }
+
+    .nav-link {
+        margin-right: 0;
+    }
+}
+
+/* Particles */
+
+
+.particle-1 {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    animation: rotation 3s infinite;
+    z-index: -999;
+}
+
+.particle-10 {
+    position: absolute;
+    top: 440%;
+    right: 50%;
+    animation: rotation 3s infinite;
+    z-index: -999;
+}
+
+.particle-6 {
+    position: absolute;
+    top: 240%;
+    left: 20%;
+    animation: rotation 3s infinite;
+    z-index: -999;
+}
+
+.particle-7 {
+    position: absolute;
+    top: 280%;
+    right: 7%;
+    animation: float 3s infinite;
+    z-index: -999;
+}
+
+.particle-9 {
+    position: absolute;
+    top: 400%;
+    right: 20%;
+    animation: float 3s infinite;
+    z-index: -999;
+}
+
+.particle-2 {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    animation: float 3s ease-in-out infinite;
+    z-index: -999;
+}
+
+.particle-3 {
+    position: absolute;
+    top: 80%;
+    left: 26%;
+    animation: float2 4s ease-in-out infinite;
+    z-index: -999;
+}
+
+.particle-8 {
+    position: absolute;
+    top: 380%;
+    left: 8%;
+    animation: float2 4s ease-in-out infinite;
+    z-index: -999;
+}
+
+.particle-4 {
+    position: absolute;
+    top: 160%;
+    right: 0;
+    animation: float2 4s ease-in-out infinite;
+    z-index: -999;
+}
+
+.particle-5 {
+    position: absolute;
+    top: 196%;
+    right: 80%;
+    animation: float 4s ease-in-out infinite;
+    z-index: -999;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
